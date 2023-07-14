@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiftie Simulator</title>
+
+    <style>
+        /* Add some basic styling to the page */
+        body {
+          text-align: center;
+          margin-top: 100px;
+          margin-left: 100px;
+          margin-right: 100px;
+        }
+        body h1,h2,h3 {
+          text-align: center;
+        }
+        body p,ul,li {
+          text-align: justify;
+        }
+#line-base{
+    align-items: center;
+  align-self: center;
+    background-color: grey;
+    height:20px;
+  width:80%;
+margin: auto;
+border-radius:25px;
+}
+#line{
+  height:20px;
+  width:200px;
+  background:blue;
+  border-radius:25px;
+  -webkit-animation-name: "slide";
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-iteration-count:infinite;
+  align-self: center;
+}
+
+@-webkit-keyframes slide{
+  0%{
+    -webkit-transform: translateX(0px);
+    background-color:blue;
+    width:200px;
+  }
+  
+  100%{
+    -webkit-transform: translateX(70vmax);
+    background-color:blue;
+    width:200px;
+  }
+  
+
+}
+    </style>
+</head>
+
+<body>
+    <h1>Taylor Swift Ticket Simulator</h1>
+    <h2>THE ERAS TOUR</h2>
+    <h3>FRONTER MEMERS PRE-SALE</h3>
+    <p id="queue-message">Your turn to purchase tickets is coming soon...</p>
+    <div id="line-base">
+        <div id="line"></div>
+    </div>
+    <div id="refresh-countdown">Page will refresh in 10</div>
+    <br />
+    <button id="enter-button" disabled>Enter Ticket Selection</button>
+    <div id="disclaimer-text">
+        <p id="simulation-notice">
+          <b>This text is bold and important. </b> But the rest of this text is less important. <br>
+          It should probably explain the purpose of the site, the policy on user data (no data stored), and maybe something about the developer.
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Praesent tristique lacus quis ipsum tempor, sit amet vehicula massa ullamcorper.</li>
+              <li>Vestibulum vulputate ipsum semper, tristique quam at, fringilla lacus.</li>
+                <li>Duis et nulla at libero dapibus tincidunt a et ex.</li>
+                  <li>Vestibulum blandit dolor in ultricies vehicula.</li>
+          </ul>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et quam neque. Sed tempus tincidunt mi, dictum dapibus mauris ullamcorper at. Etiam tincidunt libero non tincidunt imperdiet. Nulla dapibus ornare tortor, ac consectetur diam pellentesque quis. Quisque eget orci eget lectus malesuada auctor sed sed nisi. Donec quam sem, consectetur pretium faucibus ac, elementum id magna. Aenean lacus neque, ultrices a accumsan nec, maximus at nisi. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel convallis quam.
+        </p>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
